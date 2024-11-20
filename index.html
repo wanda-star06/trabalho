@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Interativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Aventura Interativa</h1>
+        <button id="start-button" onclick="startGame()">Começar Aventura</button>
+        
+        <div id="story-container">
+            <p id="story"></p>
+            <button id="choice1" onclick="nextChoice(1)"></button>
+            <button id="choice2" onclick="nextChoice(2)"></button>
+        </div>
+
+        <div id="paths-container">
+            <button id="show-paths" onclick="togglePaths()">Caminhos Percorridos</button>
+            <div id="paths"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
